@@ -1,0 +1,83 @@
+<div class="col-md-1 nPr" [ngClass]="{'showmenubar':menuhide}">
+    <header>
+        <div>
+            <a href="#!" (click)="menuhide=!menuhide" class="hidemenu-arrow">
+                <i class="glyphicon glyphicon-chevron-right" [hidden]="!menuhide"></i>
+                <i class="glyphicon glyphicon-chevron-left" [hidden]="menuhide"></i>
+            </a>
+        </div>
+        <div [hidden]="menuhide">
+
+            <h4>
+                YANKEE CANDLE
+            </h4>
+            <h5>
+                Orchestrator<br />
+                Editon
+            </h5>
+
+            <ul class="main_menu">
+
+                <li class="unactive">
+
+                    <a href="#" routerLink="/approver" routerLinkActive="active">
+                        <span class="icon-Approver"></span>
+                        Approver
+                    </a>
+                </li>
+                <li class="unactive">
+                    <!--added manager-->
+                    <a href="#" routerLink="/manager" routerLinkActive="active">
+                        <span class="icon-Manager-approval"></span>
+                        Manager
+                    </a>
+                </li>
+                <li class="unactive">
+                    <a href="#" routerLink="/inventory" routerLinkActive="active">
+                        <span class="icon-Inventory"></span>
+                        Inventory
+                    </a>
+                </li>
+                <li class="unactive">
+                    <a href="#" routerLink="/print" routerLinkActive="active">
+                        <span class="icon-Print"></span>
+                        Print
+                    </a>
+                </li>
+                <li class="unactive">
+                    <a href="#" routerLink="/qa" routerLinkActive="active">
+                        <span class="icon-Quality-check"></span>
+                        QA
+                    </a>
+                </li>
+                <li class="unactive">
+                    <a href="#" routerLink="/shipment" routerLinkActive="active">
+                        <span class="icon-shipment"></span>
+                        Shipment
+                    </a>
+                </li>
+                <li class="unactive">
+                    <a href="#" routerLink="/inventorymanagement" routerLinkActive="active">
+                        <span class="icon-Inventory_management"></span>
+                        Inventory Management
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+</div>
+<div class="col-md-11 nPr nPl" [ngClass]="{'topwrapper':menuhide}">
+    <section class="topheader">
+        <ul>
+            <li>
+                <a href="#" class="">{{username}} <i class="glyphicon glyphicon-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+</div>
+
+
